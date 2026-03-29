@@ -1,0 +1,16 @@
+# Given a string, you have to return a string in which each character (case-sensitive) is repeated once. 
+#Examples (Input -> Output): * "String" -> "SSttrriinngg" * "Hello World" -> "HHeelllloo WWoorrlldd" * "1234!_ " -> "11223344!!__ "
+def double_char(s):
+    result = ""
+    for c in s:
+        result += c * 2
+    return result
+
+# Taking input from user
+s = input("Enter a string: ")
+
+# Calling function
+output = double_char(s)
+
+# Printing result
+print("Output:", output)
